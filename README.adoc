@@ -1,0 +1,15 @@
+= LaTeX templates 
+2019-09-27 
+
+This is my https://www.latex-project.org/[LaTeX] templates. 
+It provides the custom packages and document templates I've written and usually use. 
+
+
+
+
+== Style guides 
+
+You can see the style guides from a separate https://github.com/foo-dogsquared/personal-style-guides[Git repo]. 
+
+It mainly follows my style guide for LaTeX documents at https://github.com/foo-dogsquared/personal-style-guides/blob/master/src/latex-docs.adoc[the LaTeX documents style guide]. 
+It also follows my writing style guide for writing LaTeX code and the typography for styling LaTeX documents. 
