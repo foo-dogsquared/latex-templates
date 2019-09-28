@@ -1,0 +1,37 @@
+\documentclass[class=memoir, crop=false, oneside, 14pt]{standalone}
+
+% Uses the `docs-config` style at the styles folder
+\usepackage{docs-config}
+
+% document metadata
+\author{${__author__}}
+\title{${__title__}}
+\date{${__date__}}
+
+\begin{document}
+% Frontmatter of the class note if it's compiled standalone
+% This part relies on `docs-ifrootdocument` from the styles folder
+\ifrootdocument
+  \renewcommand{\abstractname}{Summary}
+  \maketitle
+  \newpage
+
+  \frontmatter
+  \chapter{Preface}
+
+  \newpage
+
+  \tableofcontents
+  \newpage
+
+  \listoffigures
+  \newpage
+
+  \mainmatter
+\fi
+% Core content (HINT: always start with chapter LaTeX tag)
+
+% Assuming you use BibTeX with a file named `ref.bib` on the directory
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}

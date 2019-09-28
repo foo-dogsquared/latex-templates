@@ -1,0 +1,30 @@
+\documentclass[class=memoir, crop=false, oneside, 12pt]{standalone}
+\usepackage{docs-config}
+
+% document metadata
+\author{${__author__}}
+\title{${__title__}}
+\date{${__date__}}
+
+\begin{document}
+% Frontmatter of the class note
+\renewcommand{\abstractname}{Summary}
+\maketitle
+\newpage
+
+\frontmatter
+${__preface__}
+
+\tableofcontents
+\newpage
+
+\listoffigures
+\newpage
+
+\mainmatter
+
+${__main__}
+
+\bibliographystyle{plain}
+\bibliography{ref}
+\end{document}
